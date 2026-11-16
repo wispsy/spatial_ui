@@ -11,7 +11,7 @@ from spatial_ui import App, ASGIApp
 from spatial_ui.demo import Dashboard, demo_stylesheet
 
 application = ASGIApp(
-    App(Dashboard, title="Outside Labs", stylesheet=demo_stylesheet()),
+    App(Dashboard, title="wispsy", stylesheet=demo_stylesheet()),
     origin="https://dashboard.example",
     pending_limit=16,
 )

@@ -58,7 +58,7 @@ inheriting overrides from smaller breakpoints.
 ```python
 from spatial_ui import Grid, at, html, render
 
-name = "Outside Labs"
+name = "wispsy"
 page = html(t"""
     <main layout={Grid(4, 3, mode="reflow")}>
         <section key="welcome" place={at(0, 0, 4, 3)}>

@@ -46,7 +46,7 @@ are squash-merged and verify the final `main` branch.
 | 2 | SPACE-01 | `Point`, `Size`, `Rect`, `Grid`, `Breakpoint`, `at`, `right_of`, `left_of`, `above`, `below`, and `center_in`. Resolve forward references deterministically; test cycles, bounds, collisions, invalid input, square scaling, and responsive arrangements. | INIT-01 |
 | 3 | HTML-01 | Typed t-string fragments, nested templates, safe text/attribute escaping and URLs, and grid CSS. Test hostile inputs, unsupported contexts, malformed structure, fit/reflow, and source order. | SPACE-01 |
 | 4 | STATE-01 | Per-instance `State`, component composition, render snapshots, opaque event registration, stale-event rejection, and state-driven rerendering. Test independent sessions and callback failures. | HTML-01 |
-| 5 | WEB-01 | Local development server, browser event/DOM runtime, accessible Outside Labs dashboard, fit example, container reflow, and reduced-motion-aware spatial transitions. Test real HTTP session isolation, invalid requests, and installed assets; inspect the interactive demo in a browser at narrow and wide widths. | STATE-01 |
+| 5 | WEB-01 | Local development server, browser event/DOM runtime, accessible wispsy dashboard, fit example, container reflow, and reduced-motion-aware spatial transitions. Test real HTTP session isolation, invalid requests, and installed assets; inspect the interactive demo in a browser at narrow and wide widths. | STATE-01 |
 
 ## Authoring shape
 

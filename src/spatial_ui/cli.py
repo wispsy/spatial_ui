@@ -17,6 +17,6 @@ def main(argv: list[str] | None = None) -> None:
     if args.command == "demo":
         from spatial_ui.demo import Dashboard, demo_stylesheet
         from spatial_ui.server import App
-        App(Dashboard, title="spatial_ui / Outside Labs", stylesheet=demo_stylesheet()).run(args.port)
+        App(Dashboard, title="spatial_ui / wispsy", stylesheet=demo_stylesheet()).run(args.port)
         return
     parser.print_help()

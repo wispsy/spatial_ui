@@ -44,7 +44,7 @@ class Dashboard(Component):
                 <a class="skip-link" href="#workspace-content">Skip to workspace</a>
                 <header class="masthead">
                     <a href="/" class="brand"><span class="brand-mark" aria-hidden="true">s.</span>spatial_ui</a>
-                    <span class="studio">OUTSIDE LABS / EXPERIMENT 001</span>
+                    <span class="studio">WISPSY / EXPERIMENT 001</span>
                     <span class="local-badge">LOCAL PREVIEW</span>
                 </header>
                 <div class="intro">
