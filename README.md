@@ -1,5 +1,8 @@
 # spatial_ui
 
+Release candidate **0.1.1**: Native forms, ASGI/live transport and queryable tables with revision-checked cell drafts.
+[Published versions and main development](https://github.com/orgs/wispsy/projects/31) are tracked separately.
+
 [Read-only tables](docs/tables.md) render bounded detached pages with semantic
 headers, escaped values and keyboard selection by stable row/column identity.
 The same session-owned browser can explicitly enable checked scalar cell edits

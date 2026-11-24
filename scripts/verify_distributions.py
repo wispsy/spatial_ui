@@ -66,6 +66,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--tag", help="Require a release tag matching the package version")
     parser.add_argument("--receipt-file", type=Path)
+    parser.add_argument("--artifacts", type=Path, help="Verify a prebuilt release directory")
     args = parser.parse_args()
     project = tomllib.loads(ROOT.joinpath("pyproject.toml").read_text(encoding="utf-8"))["project"]
     version = project["version"]
@@ -73,7 +74,7 @@ def main() -> None:
         parser.error(f"release tag must be v{version}, got {args.tag!r}")
 
     stem = f"spatial_ui-{version}"
-    dist = ROOT / "dist"
+    dist = (args.artifacts or ROOT / "dist").resolve()
     wheel = dist / f"{stem}-py3-none-any.whl"
     sdist = dist / f"{stem}.tar.gz"
     artifacts = {path for path in dist.iterdir() if not path.name.startswith(".")}
